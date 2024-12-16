@@ -19,9 +19,10 @@
 
         /* Header styles */
         header {
-            background: #7DC5ED;  /* Light blue background */
+            background: url('https://raw.githubusercontent.com/jjanbol/home/refs/heads/main/back/luke-jones-tBvF46kmwBw-unsplash.jpg') no-repeat center center;  /* Replace with your image URL */
+            background-size: cover;  /* Makes sure the image covers the entire header */
             color: white;
-            padding: 1rem 0;
+            padding: 3rem 0;  /* Adjust padding if needed */
             text-align: center;
         }
 
@@ -107,52 +108,13 @@
             flex: 1;
         }
 
-        /* Skills section styles */
-        #skills {
-            margin-top: 3rem; /* Add space above the skills section */
-        }
-
-        #skills h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-
-        .skill {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            width: 120px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .skill:hover {
-            transform: scale(1.1); /* Slightly scale up on hover */
-        }
-
-        .skill h5 {
-            margin: 0;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
         @media (max-width: 768px) {
-            .skills-list {
-                flex-direction: column;
-                align-items: center;
+            #about img {
+                width: 120px;
+                height: 120px;
             }
         }
+
     </style>
 </head>
 <body>
@@ -164,7 +126,6 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -176,31 +137,6 @@
             <div style="display: flex; align-items: center;">
                 <img src="https://raw.githubusercontent.com/jjanbol/home/refs/heads/main/back/IMG_5088%202.jpeg" alt="Janbol's Profile Photo" style="border-radius: 50%; width: 150px; height: 150px; margin-right: 20px;">
                 <p>Hello! I'm Janbol, an AI engineering graduate student focused on Data Engineering, Big Data, and Machine Learning. I’m passionate about combining engineering with recent advances such as GenAI and Deep Learning to solve real-world problems. Specially interested in using AI for Energy, Infrastructure, Space, and other engineering systems.</p>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <h5>Python</h5>
-                </div>
-                <div class="skill">
-                    <h5>Java</h5>
-                </div>
-                <div class="skill">
-                    <h5>JavaScript</h5>
-                </div>
-                <div class="skill">
-                    <h5>C++</h5>
-                </div>
-                <div class="skill">
-                    <h5>SQL</h5>
-                </div>
-                <div class="skill">
-                    <h5>HTML/CSS</h5>
-                </div>
             </div>
         </section>
 
@@ -246,5 +182,6 @@
             </ul>
         </section>
     </div>
+
 </body>
 </html>
