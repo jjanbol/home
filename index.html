@@ -6,28 +6,21 @@
     <title>Janbol's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Universal body styles */
         body {
-            font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; /* Menlo font and fallbacks */
+            font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
             margin: 0;
             padding: 0;
-            background: #191614;  /* Dark background */
-            color: white;          /* Light text */
-            line-height: 1.6;      /* Improve readability */
-            font-size: 16px;       /* Base font size */
+            background: #191614;
+            color: white;
         }
-
-        /* Header styles */
         header {
-            background: #7DC5ED;  /* Light blue background */
+            background: #7DC5ED;
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
-
-        /* Navbar styles */
         nav {
-            background: #333;  /* Dark navbar */
+            background: #333;
         }
         nav ul {
             list-style: none;
@@ -47,27 +40,16 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
-
-        /* Container styles */
         .container {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 1rem;
         }
-
-        /* Card styles */
         .card {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: none;
             border-radius: 8px;
-            background: #2c2a29;  /* Dark background for cards */
-            color: white;         /* Text color inside cards */
         }
-        .card-body {
-            padding: 1.5rem;
-        }
-
-        /* Footer styles */
         footer {
             background: #333;
             color: white;
@@ -77,16 +59,27 @@
             bottom: 0;
             width: 100%;
         }
-
-        /* List styles */
-        ul {
-            padding-left: 20px;
+        /* Custom styling for About section */
+        #about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
         }
-        li {
-            margin-bottom: 10px;
+        #about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            margin-bottom: 15px;
         }
-        #projects {
-            margin-bottom: 2rem;
+        #about p {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            #about img {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
@@ -107,9 +100,9 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <div style="display: flex; align-items: center;">
-                <img src="https://raw.githubusercontent.com/jjanbol/home/refs/heads/main/back/IMG_5088%202.jpeg" alt="Janbol's Profile Photo" style="border-radius: 50%; width: 150px; height: 150px; margin-right: 20px;">
-                <p>Hello! I'm Janbol, an AI engineering graduate student focused on Data Engineering, Big Data, and Machine Learning. I’m passionate about combining engineering with recent advances such as GenAI and Deep Learning to solve real-world problems. Specially interested in using AI for Energy, Infrastructure, Space, and other engineering systems.</p>
+            <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <img src="https://raw.githubusercontent.com/jjanbol/home/refs/heads/main/back/IMG_5088%202.jpeg" alt="Janbol's Profile Photo" class="img-fluid">
+                <p>Hello! I'm Janbol, AI engineering graduate student focused on Data Engineering, Big Data, and Machine Learning. I’m passionate about combining engineering with recent advances such as GenAI and Deep Learning to solve real-world problems. Specially interested in using AI for Energy, Infrastructure, Space and other engineering systems.</p>
             </div>
         </section>
 
@@ -150,13 +143,11 @@
             <h2>Contact Me</h2>
             <p>If you'd like to connect, feel free to reach out via email or social media!</p>
             <ul>
-                <li>Email: j [dot] janbol [at] hotmail [dot] com </li>
+                <li>Email: j dot janbol [at] hotmail dot com </li>
                 <li>GitHub: <a href="https://github.com/jjanbol" target="_blank">github.com/jjanbol</a></li>
             </ul>
         </section>
     </div>
-
-   
 
 </body>
 </html>
